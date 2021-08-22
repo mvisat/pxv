@@ -1,0 +1,31 @@
+{
+  "name": "pxv",
+  "version": "1.0.0",
+  "description": "Pipin x Visat",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mvisat/pxv.git"
+  },
+  "scripts": {
+    "dev": "gulp",
+    "build": "NODE_ENV=production gulp build",
+    "clean": "gulp clean"
+  },
+  "author": "PxV",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.3.2",
+    "browser-sync": "^2.27.5",
+    "cssnano": "^5.0.8",
+    "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-rev": "^9.0.0",
+    "gulp-rev-rewrite": "^5.0.0",
+    "gulp-uglify": "^3.0.2",
+    "merge-stream": "^2.0.0",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.7"
+  }
+}
