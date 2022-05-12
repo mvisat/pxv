@@ -11,7 +11,6 @@ const browserSync = require('browser-sync').create();
 
 const prod = process.env.NODE_ENV === 'production';
 const port = process.env.PORT || 3000;
-const baseUrl = `/`;
 
 function clean(cb) {
   return fs.rm('public', { recursive: true, force: true }, cb);
@@ -38,7 +37,6 @@ function processHTML() {
     const manifest = fs.readFileSync('public/assets/rev-manifest.json');
     ret = ret.pipe(revRewrite({
       manifest,
-      prefix: baseUrl,
     }));
   } catch (err) {
     if (err.code !== 'NOENT') {
