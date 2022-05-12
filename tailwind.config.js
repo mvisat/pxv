@@ -1,9 +1,7 @@
 module.exports = {
-  mode: 'jit',
-  purge: [
+  content: [
     'src/**/*.html',
   ],
-  darkMode: false,
   theme: {
     fontFamily: {
       serif: ['Arvo', 'serif'],
@@ -50,10 +48,5 @@ module.exports = {
         '-10': '-10'
       }
     },
-  },
-  variants: {
-    animation: [],
-    extend: {},
-  },
-  plugins: [],
+  }
 }

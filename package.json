@@ -14,9 +14,9 @@
   "author": "PxV",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^10.4.0",
-    "browser-sync": "^2.27.7",
-    "cssnano": "^5.0.12",
+    "autoprefixer": "^10.4.7",
+    "browser-sync": "^2.27.9",
+    "cssnano": "^5.1.7",
     "gulp": "^4.0.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-postcss": "^9.0.1",
@@ -24,8 +24,8 @@
     "gulp-rev-rewrite": "^5.0.0",
     "gulp-uglify": "^3.0.2",
     "merge-stream": "^2.0.0",
-    "postcss": "^8.4.4",
-    "postcss-cli": "^9.0.2",
-    "tailwindcss": "^2.2.19"
+    "postcss": "^8.4.13",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^3.0.24"
   }
 }
