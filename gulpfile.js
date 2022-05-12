@@ -11,7 +11,7 @@ const browserSync = require('browser-sync').create();
 
 const prod = process.env.NODE_ENV === 'production';
 const port = process.env.PORT || 3000;
-const baseUrl = prod ? 'https://pxv.visat.me/' : `http://localhost:${port}/`;
+const baseUrl = `/`;
 
 function clean(cb) {
   return fs.rm('public', { recursive: true, force: true }, cb);
@@ -53,6 +53,10 @@ function processHTML() {
     .pipe(browserSync.stream());
 }
 
+function processPages() {
+  return src('src/_headers', { base: 'src' }).pipe(dest('public'));
+}
+
 function browserSyncServe(cb) {
   browserSync.init({
     server: {
@@ -74,5 +78,5 @@ function watchTask() {
 }
 
 exports.default = series(processAssets, processHTML, browserSyncServe, watchTask);
-exports.build = series(clean, processAssets, processHTML);
+exports.build = series(clean, processAssets, processHTML, processPages);
 exports.clean = series(clean);
