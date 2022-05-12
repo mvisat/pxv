@@ -13,7 +13,7 @@
   },
   "author": "PxV",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "autoprefixer": "^10.4.7",
     "browser-sync": "^2.27.9",
     "cssnano": "^5.1.7",
